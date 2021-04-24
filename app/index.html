@@ -1,13 +1,42 @@
 <html>
-    <head>
-        <link type="text/css" rel="stylesheet" href="css/main.css"/>
-        <link type="text/css" rel="stylesheet" href="css/jquery-ui.theme.min.css"/>
 
-        <script defer src="js/app.js"></script>
-        <script defer src="js/jquery.min.js"></script>
-        <script defer src="js/jquery-ui.min.js"></script>
-    </head>
-    <body>
-        <h2>Hello dear !</h2>
-    </body>
+<head>
+    <link type="text/css" rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <article>
+        <section class="left">
+            <div class="nav">
+                <input type="text" placeholder="Search">
+
+            </div>
+            <ul>
+                <li>
+                    <span class="method">GET</span>
+                    <span class="title">/api/v1/issueInvoice</span>
+                </li>
+                <li>
+                    <span class="method">GET</span>
+                    <span class="title">/api/v1/addVoucher</span>
+                </li>
+            </ul>
+        </section>
+        <section class="center">
+            <div class="nav">
+                <div class="nav_btn_area method_btn">POST</div>
+                <input type="text" placeholder="http://api.example.ir/v1/version">
+                <span class="nav_btn_area send_btn">Send</span>
+            </div>
+        </section>
+        <section class="right">
+            <div class="nav">
+                <span class="resp resp_status">200 OK</span>
+                <span class="resp resp_time">1.46 s</span>
+                <span class="resp resp_size">12.44 KB</span>
+            </div>
+        </section>
+    </article>
+</body>
+
 </html>

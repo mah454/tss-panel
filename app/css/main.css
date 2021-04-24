@@ -1,3 +1,92 @@
-h2 {
-  background-color: red;
-  font-size: 44; }
+body {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  color: white; }
+
+article {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  justify-content: start; }
+  article section {
+    background-color: #2c2c2c; }
+  article .nav {
+    height: 32px;
+    display: flex;
+    background-color: #212121;
+    border-bottom: 1px solid rgba(134, 134, 134, 0.255); }
+  article .left {
+    width: 360px;
+    resize: horizontal;
+    overflow: auto; }
+    article .left input {
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      line-height: 30px;
+      color: whitesmoke;
+      padding-left: 10px; }
+    article .left input:focus {
+      outline: none; }
+    article .left ul {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      list-style: none; }
+      article .left ul li {
+        display: flex;
+        align-items: center;
+        height: 26px;
+        padding: 5px 10px 5px 10px; }
+        article .left ul li .method {
+          font-weight: bold;
+          font-size: 14px;
+          color: #8d8de6; }
+        article .left ul li .title {
+          color: rgba(174, 168, 170, 0.9);
+          font-size: 12px;
+          margin-left: 13px; }
+      article .left ul li:hover {
+        background-color: #515050; }
+  article .center {
+    width: 640px;
+    border-right: 1px solid rgba(134, 134, 134, 0.255);
+    border-left: 1px solid rgba(134, 134, 134, 0.255);
+    resize: horizontal;
+    overflow: auto; }
+    article .center .method_btn {
+      font-weight: bold;
+      font-size: 14px;
+      color: #8d8de6; }
+    article .center .nav_btn_area {
+      display: grid;
+      align-items: center;
+      padding: 0 18px 0 18px; }
+    article .center .nav_btn_area:hover {
+      background-color: #333333; }
+    article .center input {
+      padding-left: 10px;
+      color: whitesmoke;
+      width: 100%;
+      line-height: 30px;
+      border: none;
+      background-color: transparent; }
+    article .center input:focus {
+      outline: none; }
+    article .center .send_btn {
+      font-size: 14px; }
+  article .right .resp {
+    color: white;
+    display: grid;
+    align-items: center;
+    margin: 5px;
+    font-size: 10px;
+    padding: 5px; }
+  article .right .resp_status {
+    background-color: #75ba24; }
+  article .right .resp_time {
+    background-color: #3a3a3a; }
+  article .right .resp_size {
+    background-color: #3a3a3a; }
